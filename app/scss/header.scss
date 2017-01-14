@@ -1,0 +1,15 @@
+.contact-list-header{
+  height: 100px;
+  border-bottom: #e5e3e5 1px solid;
+
+  .title {
+    font-size: 24px;
+  }
+
+  .vert-center {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    background: red;
+  }
+}

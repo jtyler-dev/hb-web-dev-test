@@ -1,0 +1,47 @@
+.contact-list{
+  background-color: #f0eff0;
+
+
+  .contacts {
+      list-style: none;
+
+      .contact-card {
+        border: 1px solid red;
+
+        .contact-card-info {
+          height: 180px;
+          width: 145px;
+          border: 1px solid grey;
+
+          .contact-img {
+            position: relative;
+            height: 130px;
+
+            .profile-img {
+              height: 110px;
+              width: 120px;
+              position: relative;
+            }
+
+            .badge-img {
+              position: absolute;
+              height: 36px;
+              width: 36px;
+              top: 92px;
+              left: 0px;
+              z-index: 1;
+            }
+          }
+
+          .name {
+            font-size: 12px;
+            font-weight: bold;
+          }
+
+          .company-info {
+            font-size: 10px;
+          }
+        }
+      }
+  }
+}

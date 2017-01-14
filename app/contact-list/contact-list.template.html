@@ -1,0 +1,43 @@
+<div class="contact-list">
+
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <div class="navbar-header title">
+        <div class="navbar-brand">
+          Contact List
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- <div class="contact-list-header ">
+
+    <div class="title vert-center col-md-6 col-sm-6 col-xs-12">
+        Contact List
+    </div>
+    <div class="search  vert-center col-md-6 col-sm-6 col-xs-12">
+      <input ng-model="$ctrl.query" />
+    </div>
+  </div> -->
+
+  <div class="contact-list-body container">
+      <ul class="contacts">
+        <li class="contact-card col-md-3 col-sm-4 col-xs-12" ng-repeat="contact in $ctrl.contacts">
+          <div class="contact-card-info">
+            <div class="contact-img">
+                <img class="profile-img" src="{{contact.profile_image}}"></img>
+                <img class="badge-img" src="{{contact.icon}}"></img>
+            </div>
+            <div class="name">
+              {{contact.name}}
+            </div>
+            <div class="company-info">
+              {{contact.job}} | {{contact.company_name}}
+            </div>
+          </div>
+        </li>
+      </ul>
+
+  </div>
+
+</div>

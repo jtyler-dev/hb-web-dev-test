@@ -1,0 +1,40 @@
+.contact-list-header {
+  height: 100px;
+  border-bottom: #e5e3e5 1px solid; }
+  .contact-list-header .title {
+    font-size: 24px; }
+  .contact-list-header .vert-center {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    background: red; }
+
+.contact-list {
+  background-color: #f0eff0; }
+  .contact-list .contacts {
+    list-style: none; }
+    .contact-list .contacts .contact-card {
+      border: 1px solid red; }
+      .contact-list .contacts .contact-card .contact-card-info {
+        height: 180px;
+        width: 145px;
+        border: 1px solid grey; }
+        .contact-list .contacts .contact-card .contact-card-info .contact-img {
+          position: relative;
+          height: 130px; }
+          .contact-list .contacts .contact-card .contact-card-info .contact-img .profile-img {
+            height: 110px;
+            width: 120px;
+            position: relative; }
+          .contact-list .contacts .contact-card .contact-card-info .contact-img .badge-img {
+            position: absolute;
+            height: 36px;
+            width: 36px;
+            top: 92px;
+            left: 0px;
+            z-index: 1; }
+        .contact-list .contacts .contact-card .contact-card-info .name {
+          font-size: 12px;
+          font-weight: bold; }
+        .contact-list .contacts .contact-card .contact-card-info .company-info {
+          font-size: 10px; }

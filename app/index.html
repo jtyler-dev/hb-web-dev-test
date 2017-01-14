@@ -1,2 +1,25 @@
 <!doctype html>
 <html lang="en" ng-app="hbApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/app.css">
+
+    <title>HB Contact List</title>
+  </head>
+  <body>
+    <div ng-view>Hello world</div>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="app.module.js"></script>
+    <script src="app.config.js"></script>
+    <script src="contact-list/contact-list.module.js"></script>
+    <script src="contact-list/contact-list.component.js"></script>
+
+
+  </body>
+</html>
