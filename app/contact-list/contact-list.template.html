@@ -22,7 +22,13 @@
 
   <div class="contact-list-body container">
       <ul class="contacts">
-        <li class="contact-card col-md-3 col-sm-4 col-xs-12" ng-repeat="contact in $ctrl.contacts">
+
+        <contact-card ng-repeat="contact in $ctrl.contacts" contact="contact"></contact-card>
+
+
+        <!-- <li class="contact-card col-md-3 col-sm-4 col-xs-12">
+          <contact-card contact="contact"></contact-card>
+
           <div class="contact-card-info">
             <div class="contact-img">
                 <img class="profile-img" src="{{contact.profile_image}}"></img>
@@ -35,7 +41,7 @@
               {{contact.job}} | {{contact.company_name}}
             </div>
           </div>
-        </li>
+        </li> -->
       </ul>
 
   </div>

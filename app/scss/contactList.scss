@@ -1,25 +1,28 @@
 .contact-list{
   background-color: #f0eff0;
-
+  height: 100%;
 
   .contacts {
       list-style: none;
-
       .contact-card {
-        border: 1px solid red;
+        padding-bottom: 15px;
+        margin-right: -15px;
 
         .contact-card-info {
-          height: 180px;
-          width: 145px;
+          height: 290px;
+          max-width: 245px;
+          padding: 10px;
           border: 1px solid grey;
+          margin: auto;
 
           .contact-img {
             position: relative;
-            height: 130px;
+            height: 230px;
 
             .profile-img {
-              height: 110px;
-              width: 120px;
+              margin: auto;
+              height: 210px;
+              width: 220px;
               position: relative;
             }
 
@@ -27,7 +30,7 @@
               position: absolute;
               height: 36px;
               width: 36px;
-              top: 92px;
+              top: 190px;
               left: 0px;
               z-index: 1;
             }
@@ -40,6 +43,7 @@
 
           .company-info {
             font-size: 10px;
+            padding-bottom: 10px;
           }
         }
       }
