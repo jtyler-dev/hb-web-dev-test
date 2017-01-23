@@ -1,14 +1,23 @@
 <li class="contact-card col-md-3 col-sm-4 col-xs-12">
   <div class="contact-card-info">
     <div class="contact-img">
-        <img class="profile-img img-responsive" src="{{$ctrl.contact.profile_image}}"></img>
-        <img class="badge-img" src="{{$ctrl.contact.icon}}"></img>
+        <img class="profile-img img-responsive" ng-src="{{$ctrl.contact.profile_image}}"></img>
     </div>
-    <div class="name">
-      {{$ctrl.contact.name}}
-    </div>
-    <div class="company-info">
-      {{$ctrl.contact.job}} | {{$ctrl.contact.company_name}}
+    <div class="contact-info">
+        <img class="badge-img" ng-src="{{$ctrl.contact.icon}}"></img>
+        <div class="name">
+          {{$ctrl.contact.name}}
+        </div>
+        <div class="company-info">
+          {{$ctrl.contact.job}} | {{$ctrl.contact.company_name}}
+        </div>
+        <div class="phone-number">
+            Phone Number: {{$ctrl.contact.phone}}
+        </div>
+        <div class="email">
+            {{$ctrl.contact.email}}
+        </div>
+
     </div>
   </div>
 </li>

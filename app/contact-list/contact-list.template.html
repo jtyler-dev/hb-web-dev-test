@@ -2,46 +2,39 @@
 
   <nav class="navbar navbar-default navbar-static-top">
     <div class="container">
-      <div class="navbar-header title">
+      <div class="col-sm-3 col-md-3 navbar-header title">
         <div class="navbar-brand">
           Contact List
         </div>
       </div>
+
+      <div class="col-sm-6 col-md-6 pull-right custom-search-bar">
+            <form class="navbar-form custom-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="search-query form-control" placeholder="Search" ng-model="$ctrl.query" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class=" glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </form>
+        </div>
+
+
     </div>
   </nav>
 
-  <!-- <div class="contact-list-header ">
-
-    <div class="title vert-center col-md-6 col-sm-6 col-xs-12">
-        Contact List
-    </div>
-    <div class="search  vert-center col-md-6 col-sm-6 col-xs-12">
-      <input ng-model="$ctrl.query" />
-    </div>
-  </div> -->
 
   <div class="contact-list-body container">
+      <div class="spinner" ng-show="$ctrl.displayContacts">
+          <img ng-src="img/ring-alt.gif"></img>
+      </div>
+
       <ul class="contacts">
-
-        <contact-card ng-repeat="contact in $ctrl.contacts" contact="contact"></contact-card>
-
-
-        <!-- <li class="contact-card col-md-3 col-sm-4 col-xs-12">
-          <contact-card contact="contact"></contact-card>
-
-          <div class="contact-card-info">
-            <div class="contact-img">
-                <img class="profile-img" src="{{contact.profile_image}}"></img>
-                <img class="badge-img" src="{{contact.icon}}"></img>
-            </div>
-            <div class="name">
-              {{contact.name}}
-            </div>
-            <div class="company-info">
-              {{contact.job}} | {{contact.company_name}}
-            </div>
-          </div>
-        </li> -->
+        <contact-card ng-repeat="contact in $ctrl.contacts | filter:$ctrl.query"
+                      contact="contact">
+        </contact-card>
       </ul>
 
   </div>

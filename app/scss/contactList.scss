@@ -1,51 +1,7 @@
 .contact-list{
-  background-color: #f0eff0;
   height: 100%;
 
   .contacts {
       list-style: none;
-      .contact-card {
-        padding-bottom: 15px;
-        margin-right: -15px;
-
-        .contact-card-info {
-          height: 290px;
-          max-width: 245px;
-          padding: 10px;
-          border: 1px solid grey;
-          margin: auto;
-
-          .contact-img {
-            position: relative;
-            height: 230px;
-
-            .profile-img {
-              margin: auto;
-              height: 210px;
-              width: 220px;
-              position: relative;
-            }
-
-            .badge-img {
-              position: absolute;
-              height: 36px;
-              width: 36px;
-              top: 190px;
-              left: 0px;
-              z-index: 1;
-            }
-          }
-
-          .name {
-            font-size: 12px;
-            font-weight: bold;
-          }
-
-          .company-info {
-            font-size: 10px;
-            padding-bottom: 10px;
-          }
-        }
-      }
   }
 }

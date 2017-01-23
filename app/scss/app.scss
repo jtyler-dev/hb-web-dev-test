@@ -1,7 +1,21 @@
 @import "header";
 @import "contactList";
+@import "contactCard";
 
 .no-gutter {
 	padding-left:0;
-  padding-right:0;
+  	padding-right:0;
+}
+
+body {
+	background-color: #f0eff0;
+
+	.spinner{
+	  width: 200px;
+	  height: 200px;
+	  border-radius: 100%;
+	  position: relative;
+	  margin: 0 auto;
+	}
+
 }

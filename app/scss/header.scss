@@ -1,15 +1,55 @@
-.contact-list-header{
-  height: 100px;
-  border-bottom: #e5e3e5 1px solid;
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 100px;
+    height: 100px;
+    padding-top: 0;
+}
 
-  .title {
+.navbar-brand {
     font-size: 24px;
-  }
+}
 
-  .vert-center {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    background: red;
-  }
+.custom-form{
+    height: 55px;
+}
+
+.custom-search-bar {
+    padding-top: 25px;
+
+    .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 3px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+
+    .input-group {
+        width: 100%;
+        float: right;
+        margin-right: -25px;
+    }
+
+    .input-group-btn {
+       z-index: 3;
+    }
+
+    button {
+       border: 0;
+       background: none;
+       /** belows styles are working good */
+       padding: 2px 5px;
+       margin-top: 2px;
+       position: relative;
+       left: -28px;
+       /* IE7-8 doesn't have border-radius, so don't indent the padding */
+       margin-bottom: 0;
+       -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+       border-radius: 3px;
+   }
 }
