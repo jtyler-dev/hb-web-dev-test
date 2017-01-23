@@ -20,17 +20,14 @@
                 </div>
             </form>
         </div>
-
-
     </div>
   </nav>
 
 
   <div class="contact-list-body container">
-      <div class="spinner" ng-show="$ctrl.displayContacts">
+      <div class="spinner" ng-show="$ctrl.displaySpinner">
           <img ng-src="img/ring-alt.gif"></img>
       </div>
-
       <ul class="contacts">
         <contact-card ng-repeat="contact in $ctrl.contacts | filter:$ctrl.query"
                       contact="contact">
